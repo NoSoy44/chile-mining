@@ -1,0 +1,119 @@
+/*Importar Bootstrap*/
+@import '../bootstrap-5.3.2/scss/bootstrap.scss';
+
+//Fuentes
+
+
+/*Importar variables Sass*/
+//@import '_variables.scss';
+@import 'variables';
+
+//Importar Mixins 
+
+@import 'mixins';
+/*Clases*/
+
+/*Header*/
+
+.header-container {
+    background-image: url('../img/bg-portada.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    text-align: center;
+  }
+
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px; 
+  }
+
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 10px 0;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    font-weight: bolder;
+  }
+
+  .navbar a:hover {
+    color: #FDC76C;
+  }
+
+
+  .info-section {
+    background-color: #000; 
+    opacity: 0.8; 
+  }
+  
+  .info-section h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 0.5rem;
+  }
+  
+  .info-section p.lead {
+    font-size: 1.25rem; 
+    margin-bottom: 1.5rem;
+  }
+
+
+  /*Video*/
+  .video {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/fondo-video.jpg');
+    opacity: 0.5; 
+    z-index: 1;
+  }
+  
+  .video .container {
+    position: relative;
+    z-index: 2;
+  }
+
+
+  .video h2, .video p, .video .btn {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  /*Footer*/
+  .footer-gradient {
+    background: linear-gradient(to right, #0B5B86, #529695); 
+    color: white;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .footer-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-icon {
+    width: 30px; 
+    height: auto;
+    margin: 0 10px; 
+  }
+
+
+
+  
