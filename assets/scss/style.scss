@@ -116,6 +116,43 @@
   .vision {
     max-width: 350px;
   }
+  /*Carousel*/ 
+
+  .container { 
+    padding: 50px; 
+
+  }
+  
+  h1 { 
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  
+  .cl {
+    height: 200px;
+    padding: 10px;
+  }
+  
+  .cl-yellow { background: #f1c40f; }
+  .cl-blue { background: #3498db; }
+  .cl-red { background: #e74c3c; }
+  .cl-green { background: #2ecc71; }
+.cl-orange { background: #f39c12; }
+.cl-purple { background: #9b59b6; }
+
+  .slick-slide {
+    margin: 0 10px;
+  }
+  
+  .slick-center { 
+    transform: scale(1.08);
+  }
+  
+  .pagination {
+    text-align: center; 
+    font-size: 1.2rem;
+  }
 
   /*Footer*/
   .footer-gradient {
