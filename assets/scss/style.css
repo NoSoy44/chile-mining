@@ -12026,6 +12026,11 @@ textarea.form-control-lg {
   margin-bottom: 1.5rem;
 }
 
+/*cards*/
+h5, .h5 {
+  font-size: 1rem;
+}
+
 /*Video*/
 .video {
   position: relative;
