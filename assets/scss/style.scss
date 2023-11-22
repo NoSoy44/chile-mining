@@ -98,8 +98,24 @@
     color: #FFFFFF;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
+  
+  /*quienes somos*/
+  .img-quienes-somos {
+    background-image: url(../img/quienes-somos.png);
+    width: 100%;
+  }
 
+  .quienes {
+    color: white;
+  }
 
+  .mision {
+    max-width: 350px;
+  }
+
+  .vision {
+    max-width: 350px;
+  }
 
   /*Footer*/
   .footer-gradient {
