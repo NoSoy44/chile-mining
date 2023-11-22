@@ -100,6 +100,44 @@
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
 
+  /*Carousel*/ 
+
+  .container { 
+    padding: 50px; 
+
+  }
+  
+  h1 { 
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  
+  .cl {
+    height: 200px;
+    padding: 10px;
+  }
+  
+  .cl-yellow { background: #f1c40f; }
+  .cl-blue { background: #3498db; }
+  .cl-red { background: #e74c3c; }
+  .cl-green { background: #2ecc71; }
+.cl-orange { background: #f39c12; }
+.cl-purple { background: #9b59b6; }
+
+  .slick-slide {
+    margin: 0 10px;
+  }
+  
+  .slick-center { 
+    transform: scale(1.08);
+  }
+  
+  .pagination {
+    text-align: center; 
+    font-size: 1.2rem;
+  }
+
   /*Footer*/
   .footer-gradient {
     background: linear-gradient(to right, #0B5B86, #529695); 
