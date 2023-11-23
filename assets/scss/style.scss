@@ -13,6 +13,12 @@
 @import 'mixins';
 /*Clases*/
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
 /*Header*/
 
 .header-container {
@@ -98,29 +104,177 @@
     color: #FFFFFF;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
-  
-  /*quienes somos*/
-  .img-quienes-somos {
-    background-image: url(../img/quienes-somos.png);
-    width: 100%;
+
+
+  /*Sector 3*/
+
+  .icono-titulares {
+    background: url('../img/logo-titulares.png') no-repeat center center;
+    background-size: contain;
+    display: inline-block;
+    width: 30px;  
+    height: 30px; 
+}
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bg1 {
+  background-image: url(https://www.telefonica.com/es/wp-content/uploads/sites/4/2022/10/175911-Nature-seen-trough-a-glass-ball.jpg?w=1200);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.bg2 {
+  background-image: url(https://segurossura.com/content/uploads/sites/10/2020/12/seguros-sura-revistaempresassura-fortalecimento-empresas-rol-social-empresas-scaled-e1608148009274.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.bg3 {
+  background-image: url(https://cdmx.imef.org.mx/media/2021/10/Factores-de-competitividad-1-1024x543.jpeg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+
+
+.content-side {
+  background: rgba(0, 88, 132, 89%); 
+  width: 50%;
+  padding: 2rem;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 1;
+}
+
+.text-content {
+  color: white;
+  max-width: 500px; 
+}
+
+.text-content h2 {
+  color: #FDC76C;
+  margin-bottom: 1rem;
+}
+
+.text-content p {
+  margin-bottom: 2rem;
+}
+
+.learn-more {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  background: none;
+}
+
+.wrapper.reverse {
+  justify-content: flex-start; 
+}
+
+.wrapper.reverse .content-side {
+  order: 1; 
+}
+
+.wrapper.reverse .background-image {
+  order: 2; 
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+      justify-content: center;
+      text-align: center;
   }
 
-  .quienes {
-    color: white;
+  .content-side {
+      clip-path: none;
+      background: rgba(0, 88, 132, 89%); 
+      padding: 1rem;
+      width: 100%;
   }
 
-  .mision {
-    max-width: 350px;
+  .text-content {
+      max-width: none;
   }
-
-  .vision {
-    max-width: 350px;
-  }
-
+}
   
   /*Carousel*/ 
 
+  .carousel-container {
+    width: 100%;
+    padding: 20px; 
+    box-sizing: border-box; 
+  }
+  
+  .carousel-title {
+    text-align: center;
+    margin-bottom: 20px; 
+  }
 
+
+  
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    width: calc(233px * 14); 
+  }
+  
+  .slide {
+    width: 233px; 
+  }
+  
+  .slide-img {
+    height: auto;
+    width: 100%;
+  }
+  
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-233px * 7)); } 
+  }
+  
+  /* Ajustes responsivos */
+  @media (max-width: 768px) {
+    .slide-track {
+      width: calc(150px * 14); 
+    }
+  
+    .slide {
+      width: 150px; 
+    }
+  }
+  
+  
 
   /*Footer*/
   .footer-gradient {
