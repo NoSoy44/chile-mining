@@ -11993,6 +11993,13 @@ body {
   text-align: center;
 }
 
+.header-container2 {
+  background-image: url("../img/sqm.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
 .logo {
   display: block;
   margin-left: auto;
@@ -12228,6 +12235,7 @@ h5, .h5 {
     width: 150px;
   }
 }
+/*Publicaciones*/
 /*Footer*/
 .footer-gradient {
   background: linear-gradient(to right, #0B5B86, #529695);
