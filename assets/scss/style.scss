@@ -112,6 +112,64 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
 
+  /*quienes somos*/
+
+ .img-quienes-somos {
+   background-image: url('../img/quienes-somos.png');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 1000px;
+ } 
+
+/*
+ .quienes {
+  background-color: #000;
+  opacity: 0.8;
+ }*/
+
+ .contenedor-uno {
+  color: white;
+  .quienes-somos {
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+ } 
+ 
+ .somos-chile {
+      font-size: 25px;
+    }
+
+ .contenedor-dos {
+  color: white;
+  .nuestra-mision, .nuestra-vision {
+  font-size: 50px;
+  text-transform: uppercase;
+  }
+ }
+
+ .contribuir, .una-industria {
+  font-size: 25px;
+ }
+
+.pilares-titulo {
+  color: #005984;
+  text-transform: uppercase;
+}
+
+.cambio-cli, .respon, .comp {
+  color: #3B9BAA;
+  max-width: 200px;
+}
+
+ .cambio, .responsabilidad, .competitividad {
+  max-width: 380px;
+ }
+
+ .cambio-climatico, .responsabilidad-empresarial, .competitividad-economica {
+  width: 300px; 
+ }
 
   /*Sector 3*/
 
