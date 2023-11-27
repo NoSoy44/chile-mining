@@ -11,6 +11,12 @@
 //Importar Mixins 
 
 @import 'mixins';
+
+
+ h2{
+  color: #005984;
+    font-size: 2.5rem;
+ }
 /*Clases*/
 
 body {
@@ -242,11 +248,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 57%;
   height: 100%;
   background-size: cover;
   background-position: center;
-  z-index: -1;
+  z-index: 1;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 70% 0%, 100% 100%, 0% 100%);
 }
 
 .bg2 {
@@ -274,6 +282,15 @@ body {
 }
 
 
+.content-side1 {
+  background: rgba(0, 88, 132, 0.89);
+  width: 60%;
+  padding: 2rem;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 1;
+  height: 100%;
+}
 
 .content-side {
   background: rgba(0, 88, 132, 89%); 
