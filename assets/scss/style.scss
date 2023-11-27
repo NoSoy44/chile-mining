@@ -2,7 +2,7 @@
 @import '../bootstrap-5.3.2/scss/bootstrap.scss';
 
 //Fuentes
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
 
 /*Importar variables Sass*/
 //@import '_variables.scss';
@@ -17,6 +17,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Evita el desbordamiento horizontal */
+  font-family: 'Roboto', sans-serif;
+
 }
 
 /*Header*/
