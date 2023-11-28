@@ -11990,6 +11990,7 @@ body {
   padding: 0;
   overflow-x: hidden; /* Evita el desbordamiento horizontal */
   font-family: "Roboto", sans-serif;
+  background: url(https://mining.ca/wp-content/uploads/2021/02/secondary-section-bg-overlay.png);
 }
 
 /*Header*/
@@ -12050,6 +12051,10 @@ body {
 }
 
 /*cards*/
+.recommended-articles {
+  margin: 60px 0px;
+}
+
 h5, .h5 {
   font-size: 1rem;
 }
@@ -12058,6 +12063,7 @@ h5, .h5 {
 .video {
   position: relative;
   overflow: hidden;
+  margin: 60px 0px;
 }
 
 .video::before {
@@ -12083,6 +12089,10 @@ h5, .h5 {
 }
 
 /*quienes somos*/
+.p-funda {
+  margin: 60px 0px;
+}
+
 .img-quienes-somos {
   background-image: url("../img/quienes-somos.png");
   background-position: center center;
@@ -12338,6 +12348,7 @@ h5, .h5 {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
+  margin: 60px 0px;
 }
 
 .carousel-title {
