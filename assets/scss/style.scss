@@ -242,6 +242,7 @@ body {
 }
 .wrapper {
   position: relative;
+  height: 400px;
   min-height: 100%;
   display: flex;
   align-items: center;
@@ -257,7 +258,7 @@ body {
   height: 100%;
   background-size: cover;
   background-position: center;
-  z-index: 1;
+  z-index: 2;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 70% 0%, 100% 100%, 0% 100%);
 }
@@ -279,11 +280,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 57%;
   height: 100%;
   background-size: cover;
   background-position: center;
-  z-index: -1;
+  z-index: 2;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 70% 0%, 100% 100%, 0% 100%);
 }
 
 
@@ -291,31 +294,50 @@ body {
   background: rgba(0, 88, 132, 0.89);
   width: 60%;
   padding: 2rem;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0% 100%);
   z-index: 1;
   height: 100%;
 }
 
 .content-side {
-  background: rgba(0, 88, 132, 89%); 
-  width: 50%;
+  background: rgba(0, 88, 132, 55.89);
+  width: 57%;
   padding: 2rem;
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 70% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 70% 100%, 0% 100%);
   z-index: 1;
+  height: 400px;
 }
 
 .text-content {
   color: white;
-  max-width: 500px; 
+  max-width: 100%; 
+  padding-left: 21%;
+}
+
+.text-content2{
+  color: white;
+  max-width: 100%; 
+  padding-right: 21%;
+    padding-left: 0;
 }
 
 .text-content h2 {
-  color: #FDC76C;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.text-content2 h2{
+  color: white;
   margin-bottom: 1rem;
 }
 
 .text-content p {
+  margin-bottom: 2rem;
+}
+
+.text-content2 p{
   margin-bottom: 2rem;
 }
 
@@ -332,7 +354,7 @@ body {
   justify-content: flex-start; 
 }
 
-.wrapper.reverse .content-side {
+.wrapper.reverse .content-side, .content-side1 {
   order: 1; 
 }
 
@@ -346,15 +368,23 @@ body {
       text-align: center;
   }
 
-  .content-side {
+  .content-side, .content-side1 { 
       clip-path: none;
       background: rgba(0, 88, 132, 89%); 
       padding: 1rem;
       width: 100%;
   }
 
-  .text-content {
+  .text-content, .text-content2 {
       max-width: none;
+      padding: 0;
+  }
+
+  .bg1, .bg2, .bg3{
+    z-index: 1;
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
   }
 }
   
