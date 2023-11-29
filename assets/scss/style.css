@@ -12185,6 +12185,14 @@ textarea.form-control-lg {
   }
 }
 /*Importar variables Sass*/
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, .h1 {
+  font-size: 50px;
+}
+
 h2, .h2 {
   color: #005984;
   font-size: 2.5rem;
@@ -12305,6 +12313,16 @@ h5, .h5 {
 .video h2, .video .h2, .video p {
   color: #005984;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.videoFull {
+  position: relative;
+  padding-bottom: 50.625%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin: 20px auto;
+  max-width: 100%;
 }
 
 /*quienes somos*/
@@ -12628,7 +12646,25 @@ h5, .h5 {
     width: 150px;
   }
 }
-/*Publicaciones*/
+/*contacto*/
+.consult, .content-s {
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+
+.btn-contact {
+  height: 50px;
+  width: 300px;
+  color: white;
+  border: transparent;
+  background: #005984;
+  border-radius: 0;
+}
+
+.contacto-form {
+  align-items: center;
+}
+
 /*Noticias*/
 button#toggle-section {
   position: fixed;
@@ -12677,6 +12713,18 @@ button#toggle-section {
 .central {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+.cont-first {
+  background-image: url(../img/BackgroundMontanas.png);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.cont-first h1, .cont-first .h1 {
+  color: #0B5B86;
 }
 
 /*Footer*/
