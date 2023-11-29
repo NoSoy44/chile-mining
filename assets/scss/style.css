@@ -12055,6 +12055,10 @@ body {
   margin: 60px 0px;
 }
 
+.recommended-articles .card {
+  border: none;
+}
+
 h5, .h5 {
   font-size: 1rem;
 }
@@ -12064,6 +12068,15 @@ h5, .h5 {
   position: relative;
   overflow: hidden;
   margin: 60px 0px;
+}
+
+.btn-Interview {
+  height: 50px;
+  width: 300px;
+  color: white;
+  border: transparent;
+  background: #005984;
+  border-radius: 45px;
 }
 
 .video::before {
@@ -12083,8 +12096,8 @@ h5, .h5 {
   z-index: 2;
 }
 
-.video h2, .video .h2, .video p, .video .btn {
-  color: #FFFFFF;
+.video h2, .video .h2, .video p {
+  color: #005984;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -12395,6 +12408,50 @@ h5, .h5 {
   }
 }
 /*Publicaciones*/
+/*Noticias*/
+button#toggle-section {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  transform: translateX(-50%);
+  transition: transform 0.3s ease;
+  background-color: #3B9BAA;
+  color: white;
+  border-radius: 0px 20px 20px 0px;
+  border: none;
+}
+
+#toggle-section:hover {
+  transform: translateX(0%);
+}
+
+.news {
+  height: 100%;
+}
+
+.frokt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.image-container {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.card-img-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /*Footer*/
 .footer-gradient {
   background: linear-gradient(to right, #0B5B86, #529695);
