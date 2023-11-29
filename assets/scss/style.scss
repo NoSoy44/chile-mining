@@ -194,10 +194,6 @@ body {
   max-width: 200px;
 }
 
- .cambio, .responsabilidad, .competitividad {
-  max-width: 380px;
- }
-
  .cambio-climatico, .responsabilidad-empresarial, .competitividad-economica {
   width: 300px; 
  }
@@ -237,6 +233,15 @@ body {
     text-transform: uppercase;
   }
  }
+
+ .contenedor-fuente-uno, .contenedor-fuente-dos, .contenedor-fuente-tres {
+   border: 1px solid #000;
+   height: 100%;
+ }
+
+ .linea-uno, .linea-dos, .linea-tres {
+   border-top: 1px solid #CFCFCF;
+ }
  
  .not-emp {
   .empres {
@@ -246,8 +251,10 @@ body {
  }
 
  .fuente-uno, .fuente-dos, .fuente-tres {
-   width: 67px;
+   width: 60px;
  }
+
+
 
 
 
