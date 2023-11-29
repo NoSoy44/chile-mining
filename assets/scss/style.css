@@ -12458,6 +12458,18 @@ button#toggle-section {
   margin-bottom: 60px;
 }
 
+.cont-first {
+  background-image: url(../img/BackgroundMontanas.png);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.cont-first h1, .cont-first .h1 {
+  color: #0B5B86;
+}
+
 /*Footer*/
 .footer-gradient {
   background: linear-gradient(to right, #0B5B86, #529695);
