@@ -12452,6 +12452,12 @@ button#toggle-section {
      object-fit: cover;
 }
 
+/*Publicaciones*/
+.central {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 /*Footer*/
 .footer-gradient {
   background: linear-gradient(to right, #0B5B86, #529695);
