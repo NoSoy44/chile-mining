@@ -163,13 +163,9 @@ body {
    background-size: cover;
    width: 100%;
    height: 1000px;
+   background-color: rgba(0, 0, 0, 0.8); 
+   background-blend-mode: multiply;
  } 
-
-/*
- .quienes {
-  background-color: #000;
-  opacity: 0.8;
- }*/
 
  .contenedor-uno {
   color: white;
@@ -214,17 +210,28 @@ body {
   background-color: #EBEBEB;
 }
 
+.nuestra-mision, .nuestra-vision {
+  color: #FFFFFF;
+}
+
  .empresas {
   color: #005984;
  }
 
  .not-uno, .not-dos, .not-tres {
-  width: 400px;
+  width: 360px;
  }
 
  .cinco, .andre, .alejandro {
-  width: 300px;
   font-size: 12px;
+ }
+
+ .boton-feria {
+  color: #FFFFFF;
+  padding: 14px 60px;
+  background: #005984;
+  border: 1px solid #707070;
+  border-radius: 50px;
  }
 
  .not-min {
