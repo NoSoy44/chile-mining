@@ -176,7 +176,7 @@ body {
  } 
  
  .somos-chile {
-      font-size: 25px;
+      font-size: 23px;
     }
 
  .contenedor-dos {
@@ -188,7 +188,7 @@ body {
  }
 
  .contribuir, .una-industria {
-  font-size: 25px;
+  font-size: 23px;
  }
 
 .pilares-titulo {
@@ -272,9 +272,36 @@ body {
    width: 60px;
  }
 
+/*mineria y sustentabilidad*/
 
+.mineras-y-sust{
+  color: #00789B;
+}
 
+.a-uno, .a-dos, .a-tres, .a-cuatro, .a-cinco {
+  text-decoration: none;
+}
 
+.a-uno {
+  color: #3D3D3D;
+}
+
+.a-dos, .a-tres, .a-cuatro, .a-cinco {
+  color: #8B8B8B;
+}
+
+.parte-dos {
+  background-color: #EBEBEB;
+}
+
+.coordinador, .codelco, .aseguradora, .directorio, .antofagasta, .estrategia, .salar, .camara, .proyectos {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.p-uno, .p-dos, .p-tres, .p-cuatro, .p-cinco, .p-seis, .p-siete, .p-ocho, .p-nueve {
+  font-size: 13px;
+}
 
   /*Sector 3*/
 
