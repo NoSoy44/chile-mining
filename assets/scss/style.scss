@@ -14,15 +14,15 @@
 
 
 h1, h2, h3, h4, h5{
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-primary;
 }
 h1{
-  font-size: 50px;
+  font-size: $font-Principal;
 }
 
  h2{
-  color: #005984;
-    font-size: 2.5rem;
+  color: $primary-color;
+    font-size: $font-Secundario;
  }
 /*Clases*/
 
@@ -30,7 +30,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Evita el desbordamiento horizontal */
-  font-family: 'Roboto', sans-serif;  
+  font-family: $font-secondary; 
   background: url(https://mining.ca/wp-content/uploads/2021/02/secondary-section-bg-overlay.png);
 }
 
@@ -60,43 +60,43 @@ body {
   .navbar {
     padding: 10px 0;
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+    background-color: $navbar-background-color !important;
     opacity: 0.8;
   }
 
   .navbar a {
     text-decoration: none;
-    color: white;
+    color: $white-color;
     padding: 10px 15px;
     display: inline-block;
     font-weight: bolder;
   }
 
   .navbar a:hover {
-    color: #FDC76C;
-    border-bottom: 1px solid #FDC76C;
+    color: $secondary-color;
+    border-bottom: 1px solid $secondary-color;
   }
 
 
   .info-section {
-    background-color: #000; 
+    background-color: $black-color; 
     opacity: 0.8; 
   }
   
   .info-section h2 {
-    font-size: 2.5rem; 
+    font-size: $font-Secundario;
     margin-bottom: 0.5rem;
   }
   
   .info-section p.lead {
-    font-size: 1.25rem; 
+    font-size: $font-size-lead;
     margin-bottom: 1.5rem;
   }
 
   /*cards*/
 
   .recommended-articles{
-    margin: 60px 0px;
+    margin: $separado-secciones;
   }
 
   .recommended-articles .card{
@@ -104,7 +104,7 @@ body {
   }
 
   h5{
-    font-size: 1rem;
+    font-size: $font-size-Terciario;
   }
 
 
@@ -112,15 +112,15 @@ body {
   .video {
     position: relative;
     overflow: hidden;
-    margin: 60px 0px;
+    margin: $separado-secciones;
   }
 
   .btn-Interview{
     height: 50px;
     width: 300px;
-    color: white;
+    color: $white-color;
     border: transparent;
-    background: #005984;
+    background: $primary-color;
     border-radius: 45px;
   }
   
@@ -142,7 +142,7 @@ body {
   }
 
   .video h2, .video p {
-    color: #005984;
+    color: $primary-color;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
 
@@ -153,7 +153,7 @@ body {
   /*quienes somos*/
 
   .p-funda{
-    margin: 60px 0px;
+    margin: $separado-secciones;
   }
 
  .img-quienes-somos {
@@ -168,9 +168,9 @@ body {
  } 
 
  .contenedor-uno {
-  color: white;
+  color: $white-color;
   .quienes-somos {
-    font-size: 50px;
+    font-size: $font-Principal;
     text-transform: uppercase;
   }
  } 
@@ -180,9 +180,9 @@ body {
     }
 
  .contenedor-dos {
-  color: white;
+  color: $white-color;
   .nuestra-mision, .nuestra-vision {
-  font-size: 50px;
+  font-size: $font-Principal;
   text-transform: uppercase;
   }
  }
@@ -192,7 +192,7 @@ body {
  }
 
 .pilares-titulo {
-  color: #005984;
+  color: $primary-color;
   text-transform: uppercase;
 }
 
@@ -215,7 +215,7 @@ body {
 }
 
  .empresas {
-  color: #005984;
+  color: $primary-color;
  }
 
  .not-uno, .not-dos, .not-tres {
@@ -229,7 +229,7 @@ body {
  .boton-feria {
   color: #FFFFFF;
   padding: 14px 60px;
-  background: #005984;
+  background: $primary-color;
   border: 1px solid #707070;
   border-radius: 50px;
  }
@@ -242,7 +242,7 @@ body {
  }
 
  .indus {
-  color: #005984;
+  color: $primary-color;
  }
 
  .not-di {
@@ -253,7 +253,7 @@ body {
  }
 
  .contenedor-fuente-uno, .contenedor-fuente-dos, .contenedor-fuente-tres {
-   border: 1px solid #000;
+   border: 1px solid $black-color;
    height: 100%;
  }
 
@@ -383,25 +383,25 @@ body {
 }
 
 .text-content {
-  color: white;
+  color: $white-color;
   max-width: 100%; 
   padding-left: 21%;
 }
 
 .text-content2{
-  color: white;
+  color: $white-color;
   max-width: 100%; 
   padding-right: 21%;
     padding-left: 0;
 }
 
 .text-content h2 {
-  color: white;
+  color: $white-color;
   margin-bottom: 1rem;
 }
 
 .text-content2 h2{
-  color: white;
+  color: $white-color;
   margin-bottom: 1rem;
 }
 
@@ -416,8 +416,8 @@ body {
 .learn-more {
   display: inline-block;
   padding: 10px 20px;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid $white-color;
+  color: $white-color;
   text-decoration: none;
   background: none;
 }
@@ -466,7 +466,7 @@ body {
     width: 100%;
     padding: 20px; 
     box-sizing: border-box; 
-    margin: 60px 0px;
+    margin: -60px 0px 60px 0px;
     
   }
   
@@ -517,16 +517,16 @@ body {
   
 /*contacto*/
 .consult, .content-s{
-  padding-top: 60px;
+  margin-top: 60px;
   margin-bottom: 60px;
 }
 
 .btn-contact{
   height: 50px;
   width: 300px;
-  color: white;
+  color: $white-color;
   border: transparent;
-  background: #005984;
+  background: $primary-color;
   border-radius: 0;
 }
 
@@ -537,6 +537,15 @@ body {
 
 /*Noticias*/
 
+h1#section-title{
+  color: #005984;
+}
+
+.news-pape{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
 button#toggle-section {
   position: fixed;
   top: 20%;
@@ -544,7 +553,7 @@ button#toggle-section {
   transform: translateX(-50%);
   transition: transform 0.3s ease;
   background-color: #3B9BAA;
-  color: white;
+  color: $white-color;
   border-radius: 0px 20px 20px 0px;
   border: none;
 }
@@ -593,6 +602,7 @@ button#toggle-section {
   background-position: top;
   background-repeat: no-repeat;
   width: 100%;
+  padding-top: 1px;
 }
 
 .cont-first h1{
@@ -601,8 +611,8 @@ button#toggle-section {
 
   /*Footer*/
   .footer-gradient {
-    background: linear-gradient(to right, #0B5B86, #529695); 
-    color: white;
+    background: $footer-gradient;
+    color: $white-color;
   }
   .footer-container {
     display: flex;

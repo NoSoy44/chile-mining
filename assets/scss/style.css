@@ -11979,6 +11979,8 @@ textarea.form-control-lg {
   }
 }
 /*Importar variables Sass*/
+/*Variables de Fuentes y colores*/
+/*Variables de Tamaños */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "Montserrat", sans-serif;
 }
@@ -11989,7 +11991,7 @@ h1, .h1 {
 
 h2, .h2 {
   color: #005984;
-  font-size: 2.5rem;
+  font-size: 40px;
 }
 
 /*Clases*/
@@ -12044,17 +12046,17 @@ body {
 }
 
 .info-section {
-  background-color: #000;
+  background-color: black;
   opacity: 0.8;
 }
 
 .info-section h2, .info-section .h2 {
-  font-size: 2.5rem;
+  font-size: 40px;
   margin-bottom: 0.5rem;
 }
 
 .info-section p.lead {
-  font-size: 1.25rem;
+  font-size: 20px;
   margin-bottom: 1.5rem;
 }
 
@@ -12068,7 +12070,7 @@ body {
 }
 
 h5, .h5 {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 /*Video*/
@@ -12217,7 +12219,7 @@ h5, .h5 {
 }
 
 .contenedor-fuente-uno, .contenedor-fuente-dos, .contenedor-fuente-tres {
-  border: 1px solid #000;
+  border: 1px solid black;
   height: 100%;
 }
 
@@ -12422,7 +12424,7 @@ h5, .h5 {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
-  margin: 60px 0px;
+  margin: -60px 0px 60px 0px;
 }
 
 .carousel-title {
@@ -12470,7 +12472,7 @@ h5, .h5 {
 }
 /*contacto*/
 .consult, .content-s {
-  padding-top: 60px;
+  margin-top: 60px;
   margin-bottom: 60px;
 }
 
@@ -12488,6 +12490,15 @@ h5, .h5 {
 }
 
 /*Noticias*/
+h1#section-title, #section-title.h1 {
+  color: #005984;
+}
+
+.news-pape {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 button#toggle-section {
   position: fixed;
   top: 20%;
@@ -12543,6 +12554,7 @@ button#toggle-section {
   background-position: top;
   background-repeat: no-repeat;
   width: 100%;
+  padding-top: 1px;
 }
 
 .cont-first h1, .cont-first .h1 {
