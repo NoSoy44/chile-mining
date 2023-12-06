@@ -12136,24 +12136,25 @@ h5, .h5 {
   color: white;
 }
 .contenedor-uno .quienes-somos {
+  font-family: "Montserrat", sans-serif;
   font-size: 50px;
-  text-transform: uppercase;
 }
 
 .somos-chile {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .contenedor-dos {
   color: white;
 }
 .contenedor-dos .nuestra-mision, .contenedor-dos .nuestra-vision {
+  font-family: "Montserrat", sans-serif;
   font-size: 50px;
   text-transform: uppercase;
 }
 
 .contribuir, .una-industria {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .pilares-titulo {
@@ -12176,24 +12177,34 @@ h5, .h5 {
 }
 
 .nuestra-mision, .nuestra-vision {
-  color: #FFFFFF;
+  color: white;
 }
 
 .empresas {
   color: #005984;
 }
-
-.not-uno, .not-dos, .not-tres {
-  width: 360px;
+.empresas .em {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
 }
 
+/*.not-uno, .not-dos, .not-tres {
+
+}*/
 .cinco, .andre, .alejandro {
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
+  text-transform: uppercase;
+}
+
+.noti-uno, .noti-dos, .noti-tres {
+  font-size: 16px;
+  color: #005984;
 }
 
 .boton-feria {
-  color: #FFFFFF;
-  padding: 14px 60px;
+  color: white;
+  padding: 14px 50px;
   background: #005984;
   border: 1px solid #707070;
   border-radius: 50px;
@@ -12222,6 +12233,11 @@ h5, .h5 {
   border-top: 1px solid #CFCFCF;
 }
 
+.fu, .fu-dos {
+  font-size: 14px;
+  color: var(--bs-secondary-color) !important;
+}
+
 .not-emp .empres {
   font-size: 18px;
   text-transform: uppercase;
@@ -12234,6 +12250,7 @@ h5, .h5 {
 /*mineria y sustentabilidad*/
 .mineras-y-sust {
   color: #00789B;
+  font-family: "Montserrat", sans-serif;
 }
 
 .a-uno, .a-dos, .a-tres, .a-cuatro, .a-cinco {
@@ -12250,6 +12267,10 @@ h5, .h5 {
 
 .parte-dos {
   background-color: #EBEBEB;
+}
+
+.img-fuente-doss {
+  width: 60px;
 }
 
 .coordinador, .codelco, .aseguradora, .directorio, .antofagasta, .estrategia, .salar, .camara, .proyectos {

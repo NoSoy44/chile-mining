@@ -167,25 +167,27 @@ body {
  .contenedor-uno {
   color: $white-color;
   .quienes-somos {
+    font-family: $font-primary;
     font-size: $font-Principal;
-    text-transform: uppercase;
+   
   }
  } 
  
  .somos-chile {
-      font-size: 23px;
+      font-size: 20px;
     }
 
  .contenedor-dos {
   color: $white-color;
   .nuestra-mision, .nuestra-vision {
+  font-family: $font-primary;  
   font-size: $font-Principal;
   text-transform: uppercase;
   }
  }
 
  .contribuir, .una-industria {
-  font-size: 23px;
+  font-size: 20px;
  }
 
 .pilares-titulo {
@@ -208,71 +210,89 @@ body {
 }
 
 .nuestra-mision, .nuestra-vision {
-  color: #FFFFFF;
+  color: $white-color;
 }
 
- .empresas {
+.empresas {
   color: $primary-color;
- }
+  .em {
+    font-family: $font-primary;
+    font-size: $font-Principal;
+  }
+  
+}
 
- .not-uno, .not-dos, .not-tres {
-  width: 360px;
- }
+/*.not-uno, .not-dos, .not-tres {
+  
+}*/
 
- .cinco, .andre, .alejandro {
+.cinco, .andre, .alejandro {
+  font-family: $font-primary;
   font-size: 12px;
- }
+  text-transform: uppercase;
+}
 
- .boton-feria {
-  color: #FFFFFF;
-  padding: 14px 60px;
+.noti-uno, .noti-dos, .noti-tres {
+   font-size: 16px;
+   color: $primary-color;
+}
+
+.boton-feria {
+  color: $white-color;
+  padding: 14px 50px;
   background: $primary-color;
   border: 1px solid #707070;
   border-radius: 50px;
- }
+}
 
- .not-min {
+.not-min {
    .ministra {
    font-size: 18px;
    text-transform: uppercase;
    }
- }
+}
 
- .indus {
+.indus {
   color: $primary-color;
- }
+}
 
- .not-di {
+.not-di {
   .directorio {
     font-size: 18px;
     text-transform: uppercase;
   }
- }
+}
 
- .contenedor-fuente-uno, .contenedor-fuente-dos, .contenedor-fuente-tres {
+.contenedor-fuente-uno, .contenedor-fuente-dos, .contenedor-fuente-tres {
    border: 1px solid $black-color;
    height: 100%;
- }
+}
 
- .linea-uno, .linea-dos, .linea-tres {
+.linea-uno, .linea-dos, .linea-tres {
    border-top: 1px solid #CFCFCF;
- }
+}
+
+.fu, .fu-dos {
+  font-size: 14px;
+  color: var(--bs-secondary-color) !important;
+}
  
- .not-emp {
+.not-emp {
   .empres {
     font-size: 18px;
     text-transform: uppercase;
   }
- }
+}
 
- .fuente-uno, .fuente-dos, .fuente-tres {
-   width: 60px;
+.fuente-uno, .fuente-dos, .fuente-tres {
+  width: 60px;
  }
 
 /*mineria y sustentabilidad*/
 
 .mineras-y-sust{
   color: #00789B;
+  font-family: $font-primary;
 }
 
 .a-uno, .a-dos, .a-tres, .a-cuatro, .a-cinco {
@@ -289,6 +309,10 @@ body {
 
 .parte-dos {
   background-color: #EBEBEB;
+}
+
+.img-fuente-doss {
+  width: 60px;
 }
 
 .coordinador, .codelco, .aseguradora, .directorio, .antofagasta, .estrategia, .salar, .camara, .proyectos {
