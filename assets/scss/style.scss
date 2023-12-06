@@ -307,6 +307,35 @@ body {
   color: #3D3D3D;
 }
 
+.h-a-uno {
+  position: relative;
+  display: block;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.a-uno::after {
+  position: absolute;
+  content: "";
+  width: 60%;
+  height: 2px;
+  top: 80%;
+  left: 0;
+  transition: transform 0.6s;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-color: $primary-color;
+}
+
+.a-uno:hover {
+  color: $primary-color;
+}
+
+.a-uno:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 .a-dos, .a-tres, .a-cuatro, .a-cinco {
   color: #8B8B8B;
 }
