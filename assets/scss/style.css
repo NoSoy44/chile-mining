@@ -12567,8 +12567,21 @@ h5, .h5 {
   border-radius: 0;
 }
 
+.btn-contact:hover {
+  background-color: #FDC76C;
+  color: white;
+}
+
 .contacto-form {
   align-items: center;
+}
+
+.correo {
+  text-align: left;
+}
+
+.contacto-img {
+  width: 100%;
 }
 
 /*Noticias*/
@@ -12606,6 +12619,10 @@ button#toggle-section {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+}
+
+.frokt h3, .frokt .h3 {
+  font-size: 16px;
 }
 
 .image-container {

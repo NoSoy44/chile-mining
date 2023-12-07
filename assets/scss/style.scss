@@ -618,8 +618,20 @@ body {
   border-radius: 0;
 }
 
+.btn-contact:hover{
+  background-color: $secondary-color;
+  color: $white-color;
+}
+
 .contacto-form{
   align-items: center;
+}
+.correo{
+  text-align: left;
+}
+
+.contacto-img{
+  width: 100%;
 }
 
 
@@ -661,6 +673,9 @@ button#toggle-section {
     height: 100%;
  }
 
+ .frokt h3{
+   font-size: $font-size-Terciario;
+ }
 
  .image-container {
   width: 100%; 
