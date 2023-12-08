@@ -12098,10 +12098,9 @@ h5, .h5 {
   width: 300px;
   color: white;
   border: transparent;
-  background: #005984;
+  background-color: #005984;
   border-radius: 45px;
 }
-
 .btn-Interview:hover {
   background-color: #FDC76C;
   color: white;

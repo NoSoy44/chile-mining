@@ -1,0 +1,27 @@
+@mixin font-size($size) {
+    font-size: $size;
+  }
+  
+  //Boton interview
+  @mixin button-interview($bg-color, $hover-bg-color, $text-color: $white-color, $height, $width, $border-radius) {
+    height: $height;
+    width: $width;
+    color: $text-color;
+    border: transparent;
+    background-color: $bg-color;
+    border-radius: $border-radius;
+  
+    &:hover {
+      background-color: $hover-bg-color;
+      color: $text-color;
+    }
+  }
+  
+  //Contenedores Header
+  @mixin background-style($url, $size: cover, $position: center, $text-align: center) {
+    background-image: url($url);
+    background-size: $size;
+    background-position: $position;
+    text-align: $text-align;
+  }
+  

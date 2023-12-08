@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5{
 }
 
 h1{
-  font-size: $font-Principal
+  @include font-size($font-Principal);
 }
 
  h2{
@@ -38,20 +38,14 @@ body {
 /*Header*/
 
 .header-container {
-    background-image: url('../img/bg-portada.jpg'); 
-    background-size: $cover; 
-    background-position: center; 
-    text-align: center;
-  }
+  @include background-style('../img/bg-portada.jpg');
+}
 
-  .header-container2 {
-    background-image: url('../img/sqm.jpg'); 
-    background-size: $cover; 
-    background-position: center; 
-    text-align: center;
-  }
+.header-container2 {
+  @include background-style('../img/sqm.jpg');
+}
 
-  .logo {
+  .logo { 
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -85,7 +79,7 @@ body {
   }
   
   .info-section h2 {
-    font-size: $font-Secundario;
+    @include font-size($font-Secundario);
     margin-bottom: 0.5rem;
   }
   
@@ -128,19 +122,10 @@ body {
     margin: $separado-secciones;
   }
 
-  .btn-Interview{
-    height: $btn-5k;
-    width: $btn-3k;
-    color: $white-color;
-    border: transparent;
-    background: $primary-color;
-    border-radius: $border-r;
+  .btn-Interview {
+    @include button-interview($primary-color, $secondary-color, $white-color, $btn-5k, $btn-3k, $border-r);
   }
-
-  .btn-Interview:hover{
-    background-color: $secondary-color;
-    color: $white-color;
-  }
+  
   
   .video::before {
     content: '';
