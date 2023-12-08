@@ -39,14 +39,14 @@ body {
 
 .header-container {
     background-image: url('../img/bg-portada.jpg'); 
-    background-size: cover; 
+    background-size: $cover; 
     background-position: center; 
     text-align: center;
   }
 
   .header-container2 {
     background-image: url('../img/sqm.jpg'); 
-    background-size: cover; 
+    background-size: $cover; 
     background-position: center; 
     text-align: center;
   }
@@ -55,7 +55,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 200px; 
+    width: $width2k; 
   }
 
   .navbar {
@@ -129,12 +129,12 @@ body {
   }
 
   .btn-Interview{
-    height: 50px;
-    width: 300px;
+    height: $btn-5k;
+    width: $btn-3k;
     color: $white-color;
     border: transparent;
     background: $primary-color;
-    border-radius: 45px;
+    border-radius: $border-r;
   }
 
   .btn-Interview:hover{
@@ -202,7 +202,7 @@ body {
 }
 
 .slide {
-  width: 233px; 
+  width: $slide; 
 }
 
 .slide-img {
@@ -222,7 +222,7 @@ body {
   }
 
   .slide {
-    width: 150px; 
+    width: $medium-think; 
   }
 }
 
@@ -242,7 +242,7 @@ body {
    background-image: url('../img/quienes-somos.png');
    background-position: center center;
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size: $cover;
    width: 100%;
    height: 1000px;
    background-color: rgba(0, 0, 0, 0.8); 
@@ -282,7 +282,7 @@ body {
 
 .cambio-cli, .respon, .comp {
   color: #3B9BAA;
-  max-width: 200px;
+  max-width: $width2k; 
 }
 
  .cambio-climatico, .responsabilidad-empresarial, .competitividad-economica {
@@ -327,7 +327,7 @@ body {
   padding: 14px 50px;
   background: $primary-color;
   border: 1px solid #707070;
-  border-radius: 50px;
+  border-radius: $btn-5k;
 }
 
 .boton-feria:hover{
@@ -450,12 +450,12 @@ body {
     background: url('../img/logo-titulares.png') no-repeat center center;
     background-size: contain;
     display: inline-block;
-    width: 30px;  
-    height: 30px; 
+    width: $little-think;  
+    height: $little-think; 
 }
 .wrapper {
   position: relative;
-  height: 400px;
+  height: $section-h4k;
   min-height: 100%;
   display: flex;
   align-items: center;
@@ -469,7 +469,7 @@ body {
   left: 0;
   width: 57%;
   height: 100%;
-  background-size: cover;
+  background-size: $cover;
   background-position: center;
   z-index: 2;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
@@ -483,7 +483,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
+  background-size: $cover;
   background-position: center;
   z-index: -1;
 }
@@ -495,7 +495,7 @@ body {
   left: 0;
   width: 57%;
   height: 100%;
-  background-size: cover;
+  background-size: $cover;
   background-position: center;
   z-index: 2;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
@@ -520,7 +520,7 @@ body {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 70% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 0%, 70% 100%, 0% 100%);
   z-index: 1;
-  height: 400px;
+  height: $section-h4k;
 }
 
 .text-content {
@@ -610,8 +610,8 @@ body {
 }
 
 .btn-contact{
-  height: 50px;
-  width: 300px;
+  height: $btn-5k;
+  width: $btn-3k;
   color: $white-color;
   border: transparent;
   background: $primary-color;
@@ -697,7 +697,7 @@ button#toggle-section {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: $cover; 
 }
 
 /*Publicaciones*/
@@ -737,7 +737,7 @@ button#toggle-section {
     align-items: center;
   }
   .social-icon {
-    width: 30px; 
+    width: $little-think; 
     height: auto;
     margin: 0 10px; 
   }
