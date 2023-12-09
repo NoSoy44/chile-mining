@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { title: 'ECONOMÍA CHILENA CRECIÓ MÁS DE LO ESPERADO EL TERCER TRIMESTRE IMPULSADA POR EL SECTOR MINERO', description: 'El PIB anotó un aumento de 0,6% y la demanda interna, en tanto, exhibió una caída de 3,6% incidida por un menor consumo e inversión. Las cifras dadas a conocer este lunes por el Banco Central confirmaron que la economía volvió...', date: '20/11/2023', image: '../assets/img/inversion-camiones-otros-X-1.jpg' },
         { title: 'CORFO CERTIFICA COMO DE I+D PROYECTO DE TIERRAS RARAS DE ACLARA EN BIOBÍO', description: 'Agencia estatal destacó que iniciativa será clave para la fabricación de imanes para turbinas eólicas, vehículos eléctricos y otras tecnologías vitales para la transición energética. Aclara resaltó que la Corporación de...', date: '17/11/2023', image: '../assets/img/TIERRAS-RARAS-I.jpg' },
         { title: 'SQM COMPRA 20% EN FIRMA FRANCESA ADIONICS ESPECIALISTA EN TECNOLOGÍA DE EXTRACCIÓN DIRECTA', description: 'La empresa produce tecnología de extracción directa de litio. Esto es clave, pues es requisito para operarel Salar de Atacama después de 2030. Una jornada altamente agitada fue la que vivieron ayer los accionistas de SQM. El papel...', date: '17/11/2023', image: '../assets/img/SQM-SAL-log-15.png' },
+        { title: 'SQM COMPRA 20% EN FIRMA FRANCESA ADIONICS ESPECIALISTA EN TECNOLOGÍA DE EXTRACCIÓN DIRECTA', description: 'La empresa produce tecnología de extracción directa de litio. Esto es clave, pues es requisito para operarel Salar de Atacama después de 2030. Una jornada altamente agitada fue la que vivieron ayer los accionistas de SQM. El papel...', date: '17/11/2023', image: '../assets/img/SQM-SAL-log-15.png' },
 
     ];
     const internacionales = [
@@ -24,29 +25,32 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     let currentNews = nacionales;
+    let currentPage = 1; // Variable para la página actual
+    const newsPerPage = 9; // Cantidad de noticias por página
 
-    function renderNews(newsArray) {
+    function renderNews(newsArray, page) {
+        const start = (page - 1) * newsPerPage; // Calcular el índice de inicio
+        const end = start + newsPerPage; // Calcular el índice de fin
+        const paginatedNews = newsArray.slice(start, end); // Obtener las noticias para la página actual
+
         const newsSection = document.getElementById('news-section');
         newsSection.innerHTML = ''; // Limpiar las noticias actuales
 
-        newsArray.forEach(news => {
+        paginatedNews.forEach(news => {
             const newsItem = document.createElement('div');
             newsItem.className = 'col-md-4 mb-4';
             newsItem.innerHTML = `<a href="#" class="text-decoration-none">
-
-
                 <div class="card news">
-                <div class="image-container">
-                    <img src="${news.image}" class="card-img-top" alt="${news.title}">
-                </div>
+                    <div class="image-container">
+                        <img src="${news.image}" class="card-img-top" alt="${news.title}">
+                    </div>
                     <div class="card-body frokt">
                         <h5 class="card-title">${news.title}</h5>
                         <p class="card-text">${news.description}</p>
                         <p class="card-text"><small class="text-muted">${news.date}</small></p>
                     </div>
                 </div>
-                </a>
-            `;
+            </a>`;
             newsSection.appendChild(newsItem);
         });
     }
@@ -54,12 +58,17 @@ document.addEventListener('DOMContentLoaded', function() {
     function setupPagination(newsArray) {
         const pagination = document.getElementById('news-pagination');
         pagination.innerHTML = ''; // Limpiar la paginación actual
-        const pageCount = Math.ceil(newsArray.length / 9); // Cantidad de Noticias x pagina
+        const pageCount = Math.ceil(newsArray.length / newsPerPage); // Cantidad de páginas
 
         for(let i = 1; i <= pageCount; i++) {
             const pageItem = document.createElement('li');
             pageItem.className = 'page-item';
-            pageItem.innerHTML = `<a class="page-link" href="#">${i}</a>`;
+            pageItem.innerHTML = `<a class="page-link" href="#" data-page="${i}">${i}</a>`;
+            pageItem.addEventListener('click', function(event) {
+                event.preventDefault();
+                currentPage = parseInt(event.target.dataset.page);
+                renderNews(newsArray, currentPage);
+            });
             pagination.appendChild(pageItem);
         }
     }
@@ -74,11 +83,16 @@ document.addEventListener('DOMContentLoaded', function() {
             this.textContent = 'Ver Internacionales';
             document.getElementById('section-title').textContent = 'Noticias Nacionales';
         }
-        renderNews(currentNews);
+        currentPage = 1; // Reiniciar a la página 1 al cambiar secciones
+        renderNews(currentNews, currentPage);
         setupPagination(currentNews);
     });
 
     // Inicialización
-    renderNews(currentNews);
+    renderNews(currentNews, currentPage);
     setupPagination(currentNews);
 });
+
+
+
+
