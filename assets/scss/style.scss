@@ -846,3 +846,11 @@ button#toggle-section {
       font-size: 1.9em; 
   }
 }
+
+@media (max-width: 768px) {
+  .bar {
+      flex-direction: column; 
+      align-items: center; 
+      gap: 10px!important; 
+  }
+}
