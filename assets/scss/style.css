@@ -12307,7 +12307,6 @@ h5, .h5 {
 }
 .contenedor-uno .quienes-somos {
   font-family: "Montserrat", sans-serif;
-  font-size: 50px;
 }
 
 .somos-chile {
@@ -12355,7 +12354,6 @@ h5, .h5 {
 }
 .empresas .em {
   font-family: "Montserrat", sans-serif;
-  font-size: 50px;
 }
 
 /*.not-uno, .not-dos, .not-tres {
@@ -12800,9 +12798,21 @@ button#toggle-section {
   margin-top: 20px;
 }
 
+@media (max-width: 530px) {
+  .contenedor-dos {
+    display: block !important;
+    text-align: center;
+  }
+}
 @media (max-width: 500px) {
   h1, .h1 {
     font-size: 1.9em;
+  }
+  .nuestra-mision, .nuestra-vision {
+    font-size: 1.9em !important;
+  }
+  .mision, .vision {
+    width: 100%;
   }
 }
 @media (max-width: 768px) {

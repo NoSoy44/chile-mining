@@ -329,7 +329,6 @@ button#search-button img {
   color: $white-color;
   .quienes-somos {
     font-family: $font-primary;
-    font-size: $font-Principal;
    
   }
  } 
@@ -378,7 +377,6 @@ button#search-button img {
   color: $primary-color;
   .em {
     font-family: $font-primary;
-    font-size: $font-Principal;
   }
   
 }
@@ -839,12 +837,29 @@ button#toggle-section {
     margin-top: 20px;
 }
 
+@media (max-width: 530px) {
+  .contenedor-dos{
+    display: block!important;
+    text-align: center;
+  }
+}
+
 
 
 @media (max-width: 500px) {
   h1 {
       font-size: 1.9em; 
   }
+
+  .nuestra-mision, .nuestra-vision {
+    font-size: 1.9em !important; 
+}
+
+
+  .mision, .vision{
+    width: 100%;
+}
+
 }
 
 @media (max-width: 768px) {
@@ -853,4 +868,5 @@ button#toggle-section {
       align-items: center; 
       gap: 10px!important; 
   }
+
 }
