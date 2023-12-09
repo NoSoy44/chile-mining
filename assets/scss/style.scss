@@ -35,6 +35,84 @@ body {
   background: url(https://mining.ca/wp-content/uploads/2021/02/secondary-section-bg-overlay.png);
 }
 
+/* Contenedor de Búsqueda */
+.search-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease;
+  z-index: 5; 
+}
+
+/* Campo de Búsqueda */
+.search-input {
+  width: 80%;
+  max-width: 600px; 
+  border: 2px solid #3B9BAA;
+  padding: 10px;
+  margin-top: 20px; 
+  font-size: 16px;
+  border-radius: 4px;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding-right: 50px; 
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Botón de búsqueda */
+button#search-button {
+  position: fixed;
+  top: 20%;
+  right: -16px;
+  background-color: #3B9BAA;
+  color: white;
+  border-radius: 20px 0px 0px 20px;
+  border: none;
+  z-index: 4;
+}
+
+button#search-button img {
+  width: 35px;
+  height: auto;
+}
+
+#search-button:hover {
+  transform: translateX(0%);
+}
+
+/* Botón de envío interno */
+.search-submit {
+  margin-left: -43px;
+  height: 43px;
+  width: 41px;
+  color: white;
+  border: 0;
+  -webkit-appearance: none;
+  margin-top: 20px;
+  background: #ff000000;
+  opacity: 0;
+  transition: opacity 0.5s ease, width 0.5s ease;
+}
+
+.search-submit img {
+  height: 30px;
+  width: 30px 
+}
+
+
 /*Header*/
 
 .header-container {
@@ -124,6 +202,19 @@ body {
 
   .btn-Interview {
     @include button-interview($primary-color, $secondary-color, $white-color, $btn-5k, $btn-3k, $border-r);
+  }
+
+  .btn-404{
+    width: $btn-3k;
+    color: $white-color;
+    border: transparent;
+    background-color: $primary-color;
+    border-radius: $border-r;
+  
+    &:hover {
+      background-color: $secondary-color;
+      color: $white-color;
+    }
   }
   
   
@@ -729,4 +820,21 @@ button#toggle-section {
 
 
 
-  
+  /*404*/
+  .error-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.error-container h1 {
+    font-size: 6rem;
+}
+
+.error-container a {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
