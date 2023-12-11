@@ -12674,6 +12674,12 @@ h5, .h5 {
   width: 100%;
 }
 
+.iconos-contacto {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
 /*Noticias*/
 h1#section-title, #section-title.h1 {
   color: #005984;
